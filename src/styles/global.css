@@ -22,6 +22,8 @@
   --clrSecondSpin: aqua;
   /* 	Third Color Value */
   --clrThirdSpin: purple;
+  /* 	Duration for text blinking animation  */
+  --displayingTextTime: 2500ms;
   --spinnerFont: calc(var(--size)/10);
 }
 
