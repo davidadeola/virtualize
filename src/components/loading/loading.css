@@ -1,0 +1,82 @@
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--size);
+  height: var(--size);
+}
+
+.spinner-area {
+  border: 15px solid transparent;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: rotate var(--duration) var(--timing) infinite;
+  mix-blend-mode: overlay;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner-third {
+  border-top-color: var(--clrThirdSpin);
+  --duration: 1.5s;
+  --timing: ease-in;
+}
+
+.spinner-second {
+  border-left-color: var(--clrSecondSpin);
+  --duration: 2s;
+  --timing: ease-in
+}
+
+.spinner-first {
+  border-bottom-color: var(--clrFirstSpin);
+  --duration: 3s;
+  --timing: ease-in-out
+}
+
+.spinner p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: var(--spinnerFont);
+  text-transform: none;
+  animation: displaying-text var(--displayingTextTime) ease-in-out infinite;
+  color: #fff;
+}
+
+@keyframes displaying-text {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes displayMessage {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.85;
+    transform: rotate(15deg);
+  }
+}
