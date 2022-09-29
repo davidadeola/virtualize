@@ -51,3 +51,11 @@ body {
   justify-content: center;
   padding: 2em;
 }
+
+.tableContainer {
+  width: clamp(30em, 80%, 900px);
+  box-shadow: 4px 4px 20px #0002;
+  position: relative;
+  overflow: auto;
+  border-radius: 1em;
+}

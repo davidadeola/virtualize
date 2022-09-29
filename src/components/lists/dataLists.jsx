@@ -1,4 +1,5 @@
 import React from "react";
+import "./dataLists.css";
 
 const DataLists = ({ lists, dataAmount }) => {
   return (

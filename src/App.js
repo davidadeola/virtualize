@@ -2,6 +2,8 @@ import React, { useState, useEffect, useCallback } from "react";
 import DataLists from "./components/lists/dataLists";
 import Loading from "./components/loading/loading";
 
+import "../src/styles/global.css";
+
 const dataAmount = 10000;
 
 function App() {
