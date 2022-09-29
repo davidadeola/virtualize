@@ -136,6 +136,15 @@ Optimized scroll to top feature for all browsers and screens
 - Resize table container
 - Improve loader animation text
 
+## Design choices
+
+- Color choice is a rarely used dark mode feature for lists, reason for color is to make list look more attractive
+- Choice of Language is React chose this because is Widely used and it is very easy to implement
+
+## Challenges faced
+
+- Had challenges trying to figure out the best way to render list without down time, considering I can't use any external Library for that. So, on my research I had to make sure I was optimizing every feature in the Application, from fetching data, making code light weight, and using CSS "content-display: auto;" to improver performance
+
 ## Run Locally
 
 Clone the project
