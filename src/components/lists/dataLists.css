@@ -19,6 +19,14 @@ thead tr th {
   color: white;
 }
 
+tr td:first-of-type {
+  background-color: rgb(15, 6, 24);
+}
+
+tbody tr:nth-child(2n) td:first-of-type {
+  background-color: var(--clr-bG-dark, #471E75);
+}
+
 tr th:first-of-type,
 tr td:first-of-type {
   background-color: #6E2FB5;
@@ -27,13 +35,7 @@ tr td:first-of-type {
   z-index: 1;
 }
 
-tr td:first-of-type {
-  border-inline-end: 1px solid rgb(180, 180, 180);
-}
 
-tbody tr:nth-child(2n) td:first-of-type {
-  background-color: var(--clr-bG-dark);
-}
 
 
 tbody {

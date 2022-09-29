@@ -1,14 +1,18 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import DataLists from "./components/lists/dataLists";
 import Loading from "./components/loading/loading";
 
 import "../src/styles/global.css";
+import ScrollButton from "./components/button/button";
+import Header from "./components/header/header";
 
 const dataAmount = 10000;
 
 function App() {
   const [lists, setLists] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [scrollVisible, setScrollVisible] = useState(false);
+  const table = useRef(null);
 
   const fetchLists = async () => {
     const res = await fetch(
@@ -28,11 +32,31 @@ function App() {
     getLists();
   }, [getLists]);
 
+  const toggleScrollButton = (event) => {
+    if (event.target.scrollTop > 200) {
+      setScrollVisible(true);
+    } else {
+      setScrollVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    table.current.addEventListener("scroll", toggleScrollButton);
+
+    return table.current.addEventListener("scroll", toggleScrollButton);
+  }, []);
+
+  const scrollToTop = () => {
+    table.current.scroll({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
-      <div className="tableContainer">
+      <Header />
+      <div className="tableContainer" ref={table}>
         {loading ? <Loading /> : ""}
         <DataLists lists={lists} dataAmount={dataAmount} />
+        <ScrollButton scrollToTop={scrollToTop} scrollVisible={scrollVisible} />
       </div>
     </>
   );
