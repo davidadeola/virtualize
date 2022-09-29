@@ -1,1 +1,1 @@
-## Getting started
+## Visualizer Application
