@@ -55,6 +55,7 @@ body {
 
 .tableContainer {
   width: max(90%, 20em);
+  min-height: 90%;
   box-shadow: 4px 4px 20px #0002;
   position: relative;
   overflow: auto;
