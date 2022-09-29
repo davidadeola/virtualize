@@ -29,10 +29,12 @@ function App() {
   }, [getLists]);
 
   return (
-    <div className="tableContainer">
-      {loading ? <Loading /> : ""}
-      <DataLists lists={lists} dataAmount={dataAmount} />
-    </div>
+    <>
+      <div className="tableContainer">
+        {loading ? <Loading /> : ""}
+        <DataLists lists={lists} dataAmount={dataAmount} />
+      </div>
+    </>
   );
 }
 

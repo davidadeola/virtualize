@@ -22,8 +22,6 @@
   --clrSecondSpin: aqua;
   /* 	Third Color Value */
   --clrThirdSpin: purple;
-  /* 	Duration for text blinking animation  */
-  --displayingTextTime: 2500ms;
   --spinnerFont: calc(var(--size)/10);
 }
 
@@ -60,6 +58,15 @@ body {
   border-radius: 1em;
 }
 
+.appContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 150px;
+}
+
 @media screen and (hover: hover) {
   .tableContainer::-webkit-scrollbar {
     width: .7em;
@@ -80,5 +87,12 @@ body {
 
   .tableContainer::-webkit-scrollbar-thumb:active {
     background-color: #888;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  img {
+    display: none;
   }
 }

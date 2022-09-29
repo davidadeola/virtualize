@@ -19,9 +19,30 @@ thead tr th {
   color: white;
 }
 
+tr th:first-of-type,
+tr td:first-of-type {
+  background-color: #6E2FB5;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
+tr td:first-of-type {
+  border-inline-end: 1px solid rgb(180, 180, 180);
+}
+
+tbody tr:nth-child(2n) td:first-of-type {
+  background-color: var(--clr-bG-dark);
+}
+
+
 tbody {
   content-visibility: auto;
   contain-intrinsic-size: 0 calc(var(--dataAmount) * 1.5em);
+}
+
+tbody tr:nth-child(2n) {
+  background-color: transparent;
 }
 
 td {
