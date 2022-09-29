@@ -49,13 +49,9 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 | primary light  | ![#e1f5fe](https://via.placeholder.com/10/e1f5fe?text=+) #e1f5fe |
 | bG-Color dark  | ![#361758](https://via.placeholder.com/10/361758?text=+) #361758 |
 
-## Deployment/run
+## Deployment
 
-To deploy this project run
-
-```bash
-  npm start
-```
+Link: [Virtualize](https://virtualizer.netlify.app/)
 
 ## Features
 
