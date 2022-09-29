@@ -65,22 +65,22 @@ body {
   .tableContainer::-webkit-scrollbar {
     width: .7em;
     height: .7em;
-    background-color: #471e75b0;
+    background-color: #361758;
     border-radius: 1em;
   }
 
   .tableContainer::-webkit-scrollbar-thumb {
-    background-color: #bbb;
-    border: 2px solid #eee;
+    background-color: #682ca8;
+    border: 2px solid #361758;
     border-radius: 1em;
   }
 
   .tableContainer::-webkit-scrollbar-thumb:hover {
-    background-color: #aaa;
+    background-color: #7c35c9;
   }
 
   .tableContainer::-webkit-scrollbar-thumb:active {
-    background-color: #888;
+    background-color: #8e3de4;
   }
 
 }
