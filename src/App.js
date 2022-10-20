@@ -6,7 +6,7 @@ import "../src/styles/global.css";
 import ScrollButton from "./components/button/button";
 import Header from "./components/header/header";
 
-const dataAmount = 10000;
+const dataAmount = 3000;
 
 function App() {
   const [lists, setLists] = useState([]);
